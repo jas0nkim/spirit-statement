@@ -1,0 +1,2 @@
+[06-Jun-2014 21:03:25 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home3/spiriui1/public_html/wp-includes/admin-bar.php on line 48
+[14-Mar-2015 03:09:04 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home3/spiriui1/public_html/wp-includes/rss-functions.php on line 8
