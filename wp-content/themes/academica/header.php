@@ -26,26 +26,43 @@
 
 			<div class="inner-wrap">
 
-				<div id="logo" class="<?php academica_logo_position(); ?>">
-					<?php if ( ! academica_has_logo() ) : ?> <h1 id="site-title"> <?php endif; ?>
+				<div class="logo-wrap">
 
-						<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> - <?php bloginfo( 'description' ); ?>" rel="home">
+					<div id="logo" class="<?php academica_logo_position(); ?>" style="float: left; width: 492px; margin: 0 0;">
+						<?php if ( ! academica_has_logo() ) : ?> <h1 id="site-title"> <?php endif; ?>
 
-							<?php
-							if ( ! academica_has_logo() ) :
-								bloginfo( 'name' );
-							else:
-								academica_logo();
-							endif;
-							?>
+							<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> - <?php bloginfo( 'description' ); ?>" rel="home">
 
-						</a>
+								<?php
+								if ( ! academica_has_logo() ) :
+									bloginfo( 'name' );
+								else:
+									academica_logo();
+								endif;
+								?>
 
-					<?php if ( ! academica_has_logo() ) : ?> </h1> <?php endif; ?>
+							</a>
 
-					<p id="site-description"><?php bloginfo( 'description' ); ?></p>
-				</div><!-- end #logo -->
-				
+						<?php if ( ! academica_has_logo() ) : ?> </h1> <?php endif; ?>
+
+						<p id="site-description"><?php bloginfo( 'description' ); ?></p>
+					</div><!-- end #logo -->
+					
+					<div id="phrase" style="float: right; width: 522px; height: 80px; margin: 10px 0 0;">
+						
+						<div id="search" style="margin: 0 0; background-color: #1B155C;">
+							<?php get_search_form(); ?>
+						</div>
+
+						<div style="clear: both;"></div>
+
+						<div style="width:100%; height: 29px; background: url('/wp-content/uploads/2012/10/spirit_banner.png') no-repeat;"></div>
+					</div>
+
+					<div style="clear: both;"></div>
+
+				</div>
+
 				<!-- additional banner -->
 				<div style="width:100%; height: 99px; background: url('/wp-content/uploads/2015/04/banner-01.png') no-repeat;"></div>
 
@@ -90,9 +107,12 @@
 
 	                </nav><!-- .navbar -->
 
+	                <!--
 					<div id="search">
-						<?php get_search_form(); ?>
-					</div><!-- end #search -->
+						<?php //get_search_form(); ?>
+					</div>
+					-->
+					<!-- end #search -->
 
 				</div><!-- end .inner-wrap -->
 
