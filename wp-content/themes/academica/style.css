@@ -1,4 +1,4 @@
-sf/*
+/*
 Theme Name: Academica
 Theme URI: http://www.wpzoom.com/themes/academica/
 Description: Academica is an education- and school-oriented CMS theme with a three-column layout and modern design. It is easy to customize and comes with a custom widget, three templates for Posts and Pages.
@@ -15,7 +15,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 html {
 	color: #333;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto Condensed", sans-serif;
 	font-size: 100%;
 	line-height: 1;
 	overflow-y: scroll;
@@ -27,6 +27,7 @@ html {
 }
 
 body {
+	font-family: "Roboto Condensed", sans-serif;
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
@@ -259,7 +260,7 @@ input[type="text"],
 input[type="password"] {
 	border: solid 1px #DDD;
 	font-size: 16px;
-	padding: 10px;
+	padding: 9px;
 	vertical-align: bottom;
 }
 
@@ -271,7 +272,7 @@ input[type="submit"] {
 	border: none;
 	color: #fff;
 	font-size: 16px;
-	padding: 11px 15px;
+	padding: 9px 13px;
 }
 
 button:hover,
@@ -617,7 +618,7 @@ img.aligncenter,
 #search {
 	float: right;
 	background-color: #261D80;
-	padding: 3px 10px 3px 0;
+	padding: 0 10px 0 0;
 	margin: 0 0 10px;
 	border-radius: 3px;
 }
@@ -1213,7 +1214,7 @@ p.pages {
 
 .widget_pages > ul ul,
 .widget ul.menu ul {
-	border-left: solid 1px #eee;
+	/*border-left: solid 1px #eee;*/
 	margin: 10px 0 0 20px;
 	padding-left: 15px;
 }
@@ -1404,6 +1405,17 @@ html.mm-opening .mm-slideout { -webkit-transform: translate(140px, 0); -moz-tran
 }
 @media all and (min-width: 550px) {
 html.mm-opening .mm-slideout { -webkit-transform: translate(440px, 0); -moz-transform: translate(440px, 0); -ms-transform: translate(440px, 0); -o-transform: translate(440px, 0); transform: translate(440px, 0); }
+}
+
+.widget ul.menu > li > ul.sub-menu > li > ul.sub-menu > li.menu-item-has-children:before {
+	content: "\2023";
+	position: relative;
+	left: -3px;
+}
+
+.widget ul.menu > li > ul.sub-menu > li > ul.sub-menu > li.menu-item-has-children {
+	position: relative;
+	left: -8px;
 }
 
 /*make the menu sub-menu items drop down on mouse hover */
