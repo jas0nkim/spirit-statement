@@ -72,7 +72,7 @@
 
 				<div class="inner-wrap">
 
-					<nav class="main-navbar" role="navigation">
+					<nav class="main-navbar" role="navigation" style="height: 53px;">
 
 	                    <div class="navbar-header">
 	                        <?php if (has_nav_menu( 'primary' )) { ?>
