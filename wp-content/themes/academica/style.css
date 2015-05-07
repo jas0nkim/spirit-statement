@@ -525,7 +525,6 @@ img.aligncenter,
 	display: inline-block;
 	vertical-align: middle;
 	margin-top: 5px;
-	width: 100%;
 }
 
 
@@ -543,10 +542,10 @@ img.aligncenter,
 	color: #fff
 }
 
-.sf-menu, .sf-menu * { margin: 0; padding: 0; list-style: none; display: table-row; }
+.sf-menu, .sf-menu * { margin: 0; padding: 0; list-style: none; }
 .sf-menu li { position: relative }
 .sf-menu ul { position: absolute; display: none; top: 100%; left: 0; z-index: 99; }
-.sf-menu > li { /*float: left*/ display: table-cell; }
+.sf-menu > li { float: left }
 .sf-menu li:hover > ul, .sf-menu li.sfHover > ul { display: block }
 .sf-menu a { display: block; position: relative; }
 .sf-menu ul ul { top: 0; left: 100%; }
@@ -1423,22 +1422,6 @@ html.mm-opening .mm-slideout { -webkit-transform: translate(440px, 0); -moz-tran
 	margin: 0 0 30px;
 }
 
-.menu-menu-container {
-	display: table;
-	width: 100%;
-}
-
-li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-home.menu-item-109 > a {
-	width: 65px;
-}
-
-li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-158 {
-	text-align: end;
-}
-
-li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-158 > a {
-	padding-right: 0;
-}
 /*make the menu sub-menu items drop down on mouse hover */
 /*
 li.menu-item-has-children:hover ul.sub-menu{
