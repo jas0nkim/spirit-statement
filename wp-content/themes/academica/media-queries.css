@@ -5,6 +5,11 @@
         width: 96%;
     }
 
+    #main-nav {
+        width: 96%;
+        padding: 10px 0 0;
+    }
+
     #wrap {
         width: 96%;
     }
