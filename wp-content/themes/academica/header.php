@@ -64,7 +64,7 @@
 				</div>
 
 				<!-- additional banner -->
-				<div style="width:100%; height: 99px; background: url('/wp-content/uploads/2015/04/banner-01.png') no-repeat;"></div>
+				<div style="width:100%; height: 99px; background: url('/wp-content/uploads/2015/04/banner-01-01.jpg') no-repeat;"></div>
 
 			</div><!-- end .inner-wrap -->
 

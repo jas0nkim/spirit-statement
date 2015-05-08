@@ -34,8 +34,8 @@ class dc_jqaccordion {
 		// Scripts
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'jqueryhoverintent', dc_jqaccordion::get_plugin_directory() . '/js/jquery.hoverIntent.minified.js', array('jquery') );
-		wp_enqueue_script( 'jquerycookie', dc_jqaccordion::get_plugin_directory() . '/js/jquery.cookie.js', array('jquery') );
-		wp_enqueue_script( 'dcjqaccordion', dc_jqaccordion::get_plugin_directory() . '/js/jquery.dcjqaccordion.2.9.js', array('jquery') );
+		wp_enqueue_script( 'jquerycookie', dc_jqaccordion::get_plugin_directory() . '/js/jquery.cookie-min.js', array('jquery') );
+		wp_enqueue_script( 'dcjqaccordion', dc_jqaccordion::get_plugin_directory() . '/js/jquery.dcjqaccordion.2.9-min.js', array('jquery') );
 	}
 	
 	function footer(){

@@ -40,7 +40,7 @@ function kpg_no_rc_img_fixup() {
 	if ($allowforlogged=='Y' && is_user_logged_in() ) { return; }	
 	$dir = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__));
 	$img = addslashes($dir.'not.gif');
-	$js = addslashes($dir.'no-right-click-images.js');
+	$js = addslashes($dir.'no-right-click-images-min.js');
 	$altimg=trim($altimg);
 	if (!empty($altimg)) $img=$altimg;
 	
